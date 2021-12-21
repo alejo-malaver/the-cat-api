@@ -1,0 +1,214 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "items": [
+    {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "temperament",
+        "life_span",
+        "alt_names",
+        "wikipedia_url",
+        "origin",
+        "weight"
+      ],
+      "properties": {
+        "alt_names": {
+          "type": "string",
+          "examples": [
+            "Domestic Shorthair"
+          ]
+        },
+        "experimental": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "hairless": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "hypoallergenic": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "id": {
+          "type": "string",
+          "examples": [
+            "kora"
+          ]
+        },
+        "life_span": {
+          "type": "string",
+          "examples": [
+            "17 - 20"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "examples": [
+            "Selkirk Rex"
+          ]
+        },
+        "natural": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "origin": {
+          "type": "string",
+          "examples": [
+            "Thailand"
+          ]
+        },
+        "rare": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "reference_image_id": {
+          "type": "string",
+          "examples": [
+            "KBroiVNCM"
+          ]
+        },
+        "rex": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "short_legs": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "suppressed_tail": {
+          "type": "integer",
+          "enum": [0, 1]
+        },
+        "adaptability": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "affection_level": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "country_code": {
+          "type": "string",
+          "example": [
+            "CO"
+          ]
+        },
+        "child_friendly": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "dog_friendly": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "energy_level": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "grooming": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "health_issues": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "intelligence": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "shedding_level": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "social_needs": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "stranger_friendly": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "vocalisation": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "temperament": {
+          "type": "string",
+          "examples": [
+            "Alert, Agile, Energetic, Demanding, Intelligent"
+          ]
+        },
+        "weight": {
+          "type": "object",
+          "required": [
+            "imperial",
+            "metric"
+          ],
+          "properties": {
+            "imperial": {
+              "type": "string",
+              "examples": [
+                "7  -  10"
+              ]
+            },
+            "metric": {
+              "type": "string",
+              "examples": [
+                "7 - 10"
+              ]
+            }
+          }
+        },
+        "image": {
+          "type": "object",
+          "required": [
+            "id",
+            "width",
+            "height",
+            "url"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "examples": [
+                1200
+              ]
+            },
+            "width": {
+              "type": "integer",
+              "examples": [
+                800
+              ]
+            },
+            "height": {
+              "type": "integer",
+              "examples": [
+                "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
+              ]
+            },
+            "url": {
+              "type": "string",
+              "examples": [
+                "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"
+              ]
+            }
+          }
+        },
+        "wikipedia_url": {
+          "type": "string",
+          "examples": [
+            "https://en.wikipedia.org/wiki/Aegean_cat"
+          ]
+        }
+      }
+    }
+  ]
+}
